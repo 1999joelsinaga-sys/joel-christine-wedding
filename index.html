@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Undangan Pernikahan Joel & Christine</title>
+    <title>Undangan Pernikahan Joel dan Christine</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Georgia:wght@300;400&display=swap" rel="stylesheet">
     <style>
@@ -119,6 +119,10 @@
             animation: fadeInUp 1s 0.5s forwards;
         }
 
+        .cover-background {
+            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Engagement Photo 1" onclick="openModal(this.src)">
+            }
+            
         .couple-names {
             font-size: 4rem;
             font-family: 'Playfair Display', serif;
@@ -1101,26 +1105,12 @@
             initAnimations();
         });
 
-        // Create floating hearts animation
-        function createFloatingHearts() {
-            const container = document.getElementById('floatingHearts');
-            const hearts = ['❤️', '💕', '💖', '💗', '💓', '💞'];
-            
-            for (let i = 0; i < 20; i++) {
-                const heart = document.createElement('div');
-                heart.className = 'heart';
-                heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
-                heart.style.left = Math.random() * 100 + '%';
-                heart.style.animationDelay = Math.random() * 15 + 's';
-                heart.style.fontSize = (Math.random() * 15 + 15) + 'px';
-                container.appendChild(heart);
-            }
-        }
 
         // Setup auto music play
         function setupAutoMusic() {
             const musicPlayer = document.getElementById('musicPlayer');
             const weddingMusic = document.getElementById('weddingMusic');
+            <link href = "C:\Users\LENOVO\Downloads\Batak - Gondang Malim.mp3" rell ="stylesheet">
             let isPlaying = false;
             let hasInteracted = false;
 
